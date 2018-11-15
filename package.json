@@ -1,0 +1,23 @@
+{
+  "name": "@jsiebern/bs-material-ui-ppx",
+  "repository": {
+    "url": "jsiebern/reason-mui-withstyles-ppx",
+    "type": "git"
+  },
+  "version": "1.0.0",
+  "author": "Jonathan Siebern <jsiebern88@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "bsb -make-world -backend native && cp ./lib/bs/native/ppx_withStyles.native ./ppx",
+    "postinstall": "bsb -make-world -backend native && cp ./lib/bs/native/ppx_withStyles.native ./ppx",
+    "clean": "bsb -clean-world",
+    "watch": "bsb -make-world -backend native -w"
+  },
+  "keywords": [
+    "Reason"
+  ],
+  "dependencies": {
+    "bsb-native": "^4.0.9",
+    "yauzl": "^2.10.0"
+  }
+}
