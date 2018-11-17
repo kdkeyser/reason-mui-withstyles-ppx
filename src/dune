@@ -1,0 +1,4 @@
+(executables
+ (names ppx_withStyles)
+ (public_names ppx_withStyles)
+ (libraries ocaml-migrate-parsetree))
