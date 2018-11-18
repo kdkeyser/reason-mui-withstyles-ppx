@@ -5,3 +5,5 @@ lib
 .bsb.lock
 _esy
 yarn-error.log
+/_build/
+/*.install
