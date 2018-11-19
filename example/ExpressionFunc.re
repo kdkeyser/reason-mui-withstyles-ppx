@@ -1,8 +1,10 @@
 [%mui.withStyles
-  "ModuleName"((theme: MaterialUi.Theme.t) =>
+  "StyledExample"(theme => {
+    Js.log(theme);
+    let x = "hellooo";
+    Js.log(x);
     {
-      some: ReactDOMRe.Style.make(~backgroundColor="red", ()),
-      other: ReactDOMRe.Style.make(~backgroundColor="blue", ()),
-    }
-  )
+      alignRight: ReactDOMRe.Style.make(~width="100%", ~textAlign="right", ()),
+    };
+  })
 ];

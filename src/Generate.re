@@ -135,7 +135,7 @@ let genModuleApply = (name: string, applyTo: string) =>
             pmod_desc:
               Pmod_ident(
                 Location.mknoloc(
-                  Longident.parse("MaterialUi.WithStylesSafe"),
+                  Longident.parse("MaterialUi_WithStyles.WithStylesSafe"),
                 ),
               ),
             pmod_loc: Location.none,
@@ -178,7 +178,9 @@ let genModuleTemplate =
                   pmty_desc:
                     Pmty_ident(
                       Location.mknoloc(
-                        Longident.parse("MaterialUi.WithStylesSafeTemplate"),
+                        Longident.parse(
+                          "MaterialUi_WithStyles.WithStylesSafeTemplate",
+                        ),
                       ),
                     ),
                   pmty_loc: Location.none,
