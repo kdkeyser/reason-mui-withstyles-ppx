@@ -1,5 +1,5 @@
 {
-    "name": "ppx_withStyles",
+    "name": "@jsiebern/bs-material-ui-ppx",
     "version": "1.0.0",
     "sources": [{
         "dir": "src"

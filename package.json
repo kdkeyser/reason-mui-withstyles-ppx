@@ -4,6 +4,9 @@
     "url": "jsiebern/reason-mui-withstyles-ppx",
     "type": "git"
   },
+  "private": false,
+  "homepage": "https://github.com/jsiebern/reason-mui-withstyles-ppx",
+  "bugs": "https://github.com/jsiebern/reason-mui-withstyles-ppx/issues",
   "version": "1.0.0",
   "author": "Jonathan Siebern <jsiebern88@gmail.com>",
   "license": "MIT",
@@ -16,6 +19,7 @@
   "keywords": [
     "Reason"
   ],
+  "description": "This is a ppx for using the withStyles component in @jsiebern/bs-material-ui",
   "dependencies": {
     "bsb-native": "^4.0.9",
     "yauzl": "^2.10.0"
