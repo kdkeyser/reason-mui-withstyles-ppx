@@ -94,22 +94,21 @@ let analyse = tpl => {
           ),
           Generate.genValueBinding(
             "classes",
-            Ast_helper.Exp.constraint_(
-              Ast_helper.Exp.construct(
-                Location.mknoloc(Longident.parse("Record")),
-                Some(Ast_helper.Exp.record(entries, None)),
+            Ast_helper.Exp.apply(
+              Ast_helper.Exp.ident(
+                Location.mknoloc(Longident.parse("Obj.magic")),
               ),
-              Ast_helper.Typ.constr(
-                Location.mknoloc(
-                  Longident.parse("MaterialUi_WithStyles.classRecordDef"),
-                ),
-                [
-                  Ast_helper.Typ.constr(
-                    Location.mknoloc(Longident.parse("classRecord")),
-                    [],
+              [
+                (
+                  "",
+                  Ast_helper.Exp.construct(
+                    Location.mknoloc(
+                      Longident.parse("MaterialUi_WithStyles.Record"),
+                    ),
+                    Some(Ast_helper.Exp.record(entries, None)),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
           Generate.genTypeFromType(
@@ -168,22 +167,21 @@ let analyse = tpl => {
           ),
           Generate.genValueBinding(
             "classes",
-            Ast_helper.Exp.constraint_(
-              Ast_helper.Exp.construct(
-                Location.mknoloc(Longident.parse("ThemeFunc")),
-                Some(func),
+            Ast_helper.Exp.apply(
+              Ast_helper.Exp.ident(
+                Location.mknoloc(Longident.parse("Obj.magic")),
               ),
-              Ast_helper.Typ.constr(
-                Location.mknoloc(
-                  Longident.parse("MaterialUi_WithStyles.classRecordDef"),
-                ),
-                [
-                  Ast_helper.Typ.constr(
-                    Location.mknoloc(Longident.parse("classRecord")),
-                    [],
+              [
+                (
+                  "",
+                  Ast_helper.Exp.construct(
+                    Location.mknoloc(
+                      Longident.parse("MaterialUi_WithStyles.ThemeFunc"),
+                    ),
+                    Some(func),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
           Generate.genTypeFromType(

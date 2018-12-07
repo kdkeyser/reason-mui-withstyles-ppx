@@ -5,11 +5,13 @@ module CrsTest:
     type classRecordStrings = crs = {
   type classRecord = {alignCenter: ReactDOMRe.Style.t};
   type classRecordJs = {. "alignCenter": ReactDOMRe.Style.t};
-  let classes: MaterialUi_WithStyles.classRecordDef(classRecord) =
-    Record({
-      alignCenter:
-        ReactDOMRe.Style.make(~width="100%", ~textAlign="center", ()),
-    });
+  let classes =
+    Obj.magic(
+      MaterialUi_WithStyles.Record({
+        alignCenter:
+          ReactDOMRe.Style.make(~width="100%", ~textAlign="center", ()),
+      }),
+    );
   type classRecordStrings = crs;
   type classRecordStringsJs = {. "alignCenter": string};
   let classRecordStringsFromJs = crJs: classRecordStrings => {
