@@ -94,21 +94,11 @@ let analyse = tpl => {
           ),
           Generate.genValueBinding(
             "classes",
-            Ast_helper.Exp.apply(
-              Ast_helper.Exp.ident(
-                Location.mknoloc(Longident.parse("Obj.magic")),
+            Ast_helper.Exp.construct(
+              Location.mknoloc(
+                Longident.parse("MaterialUi_WithStyles.Record"),
               ),
-              [
-                (
-                  "",
-                  Ast_helper.Exp.construct(
-                    Location.mknoloc(
-                      Longident.parse("MaterialUi_WithStyles.Record"),
-                    ),
-                    Some(Ast_helper.Exp.record(entries, None)),
-                  ),
-                ),
-              ],
+              Some(Ast_helper.Exp.record(entries, None)),
             ),
           ),
           Generate.genTypeFromType(
@@ -167,21 +157,11 @@ let analyse = tpl => {
           ),
           Generate.genValueBinding(
             "classes",
-            Ast_helper.Exp.apply(
-              Ast_helper.Exp.ident(
-                Location.mknoloc(Longident.parse("Obj.magic")),
+            Ast_helper.Exp.construct(
+              Location.mknoloc(
+                Longident.parse("MaterialUi_WithStyles.ThemeFunc"),
               ),
-              [
-                (
-                  "",
-                  Ast_helper.Exp.construct(
-                    Location.mknoloc(
-                      Longident.parse("MaterialUi_WithStyles.ThemeFunc"),
-                    ),
-                    Some(func),
-                  ),
-                ),
-              ],
+              Some(func),
             ),
           ),
           Generate.genTypeFromType(
