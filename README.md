@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/kdkeyser/reason-mui-withstyles-ppx.svg?branch=master)](https://travis-ci.org/kdkeyser/reason-mui-withstyles-ppx)
+
 # Reason Mui PPX Generator
 
 This library creates a code extension for conveniently using the `withStyles` functionality of MaterialUi in a typesafe way.
