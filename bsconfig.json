@@ -6,7 +6,7 @@
     }],
     "entries": [{
         "backend": "native",
-        "main-module": "Ppx_withStyles"
+        "main-module": "Ppx_withstyles"
     }],
     "refmt": 3,
     "bsc-flags": "-g",
